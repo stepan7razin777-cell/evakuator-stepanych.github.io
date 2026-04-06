@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены на эвакуатор Степаныч 24/7 | Калькулятор стоимости</title>
+    <meta name="description" content="Тарифы на эвакуацию в Воронеже и области. Калькулятор стоимости: легковые 75₽/км, внедорожник 80₽/км, спецтехника 80₽/км. Рассчитайте онлайн.">
+    <meta name="keywords" content="цены эвакуатор воронеж, сколько стоит эвакуатор, калькулятор эвакуатора">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-call"><a href="tel:+79601265990"><i class="fas fa-phone-alt"></i></a></div>
+    <header>
+        <div class="container header-flex">
+            <div class="logo-area"><div class="logo">Степаныч <span>Круглосуточно 24/7</span></div><div class="address"><i class="fas fa-map-marker-alt"></i> Воронеж, 9 Января</div></div>
+            <nav><ul><li><a href="index.html">Главная</a></li><li><a href="services.html">Услуги</a></li><li><a href="prices.html" class="active">Цены</a></li><li><a href="promotions.html">Акции</a></li><li><a href="contacts.html">Контакты</a></li></ul></nav>
+            <div class="phone-area"><div class="phone"><a href="tel:+79601265990"><i class="fas fa-phone-alt"></i> +7 (960) 126-59-90</a></div><a href="tel:+79601265990" class="call-btn"><i class="fas fa-truck"></i> <span>Вызвать эвакуатор</span></a></div>
+        </div>
+    </header>
+    <section class="section section-white reveal">
+        <div class="container">
+            <h1 class="section-title">Тарифы на эвакуацию</h1>
+            <table class="price-table">
+                <thead><tr><th>Услуга</th><th>Стоимость</th></tr></thead>
+                <tbody>
+                    <tr><td>Эвакуация легкового авто по городу (Воронеж)</td><td><strong>от 3000 ₽</strong></td></tr>
+                    <tr><td>Эвакуация по Воронежской области</td><td><strong>от 70 ₽/км</strong></td></tr>
+                    <tr><td>Мотоцикл</td><td><strong>от 1300 ₽</strong></td></tr>
+                    <tr><td>Малолитражка / Легковой / Внедорожник / Минивэн</td><td><strong>от 2000 ₽</strong></td></tr>
+                    <tr><td>Спецтехника (трактор, погрузчик)</td><td><strong>от 2000 ₽</strong></td></tr>
+                    <tr><td>Межгород (выезд за пределы области)</td><td><strong>от 70 ₽/км + подача</strong></td></tr>
+         
+                </tbody>
+            </table>
+
+            <div class="calculator reveal">
+                <h3>📐 Рассчитать стоимость эвакуации</h3>
+                <div class="form-group"><label>Откуда (город/улица)</label><input type="text" id="from" placeholder="Воронеж, Московский пр-т"></div>
+                <div class="form-group"><label>Куда</label><input type="text" id="to" placeholder="Воронеж, ул. 9 Января"></div>
+                <div class="form-group"><label>Тип авто</label>
+                    <select id="vehicleType">
+                        <option value="legkovoy">Легковой автомобиль (75 руб/км)</option>
+                        <option value="vnedorozhnik">Внедорожник (80 руб/км)</option>
+                        <option value="spectechnika">Спецтехника (80 руб/км)</option>
+                    </select>
+                </div>
+                <div class="form-group"><label>Расстояние (км)</label><input type="number" id="distance" placeholder="Например, 25 км"></div>
+                <button class="btn" onclick="calculateCost()">Рассчитать стоимость</button>
+                <div class="calc-result" id="calcResult">Введите данные и нажмите «Рассчитать»</div>
+                <p style="font-size:0.85rem; margin-top:15px;">* Минимальная стоимость по городу — 3000 ₽. При расстоянии менее 10 км цена может быть фиксированной.</p>
+            </div>
+        </div>
+    </section>
+    <footer><div class="container"><p>© 2025 Степаныч Круглосуточно 24/7 | <a href="tel:+79601265990">+7 (960) 126-59-90</a></p></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>

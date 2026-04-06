@@ -1,0 +1,106 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Roboto,'Helvetica Neue',sans-serif;background:#f8f9fc;color:#1e2a3e;display:flex;flex-direction:column;min-height:100vh;line-height:1.5}
+.container{max-width:1300px;margin:0 auto;padding:0 25px}
+/* Header */
+header{background:linear-gradient(135deg,#0b2b26 0%,#1a4a3f 100%);color:#fff;padding:12px 0;position:sticky;top:0;z-index:1000;box-shadow:0 4px 20px rgba(0,0,0,0.1)}
+.header-flex{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px}
+.logo-area{display:flex;flex-direction:column}
+.logo{font-size:28px;font-weight:800;letter-spacing:1px}
+.logo span{color:#f5b042;font-weight:700}
+.address{font-size:14px;margin-top:5px;opacity:0.9;display:flex;align-items:center;gap:6px}
+.address i{font-size:14px;color:#f5b042}
+nav ul{display:flex;list-style:none;gap:30px}
+nav ul li a{color:#fff;text-decoration:none;font-weight:600;padding:8px 0;transition:0.2s;border-bottom:2px solid transparent}
+nav ul li a:hover,nav ul li a.active{border-bottom-color:#f5b042;color:#f5b042}
+.phone-area{display:flex;align-items:center;gap:15px;flex-wrap:wrap}
+.phone a{color:#fff;text-decoration:none;background:#000000aa;backdrop-filter:blur(4px);padding:8px 18px;border-radius:50px;font-weight:bold;font-size:1.2rem;transition:0.2s;display:inline-flex;align-items:center;gap:8px}
+.phone a:hover{background:#000;transform:scale(1.02)}
+.call-btn{background:#f5b042;color:#0b2b26;padding:8px 20px;border-radius:50px;font-weight:bold;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:0.2s;font-size:1rem}
+.call-btn i{font-size:1.2rem}
+.call-btn:hover{background:#ffc107;transform:scale(1.02);box-shadow:0 4px 12px rgba(0,0,0,0.2)}
+/* Hero */
+.hero{background:linear-gradient(125deg,#1f3e38 0%,#2a5a4f 100%);color:#fff;padding:70px 0;text-align:center}
+.hero h1{font-size:48px;margin-bottom:20px;font-weight:800}
+.hero p{font-size:20px;margin-bottom:30px;max-width:800px;margin-left:auto;margin-right:auto;opacity:0.9}
+.btn{display:inline-flex;align-items:center;gap:12px;background:#f5b042;color:#1e2a3e;padding:14px 32px;text-decoration:none;border-radius:50px;font-size:1.2rem;font-weight:bold;transition:0.2s;border:none;cursor:pointer}
+.btn i{font-size:1.3rem}
+.btn:hover{background:#ffc107;transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,0.2)}
+/* Sections */
+.section{padding:70px 0}
+.section-white{background:#fff}
+.section-light{background:#f8f9fc}
+.section-title{text-align:center;font-size:36px;margin-bottom:50px;font-weight:700;color:#0b2b26;position:relative}
+.section-title:after{content:'';display:block;width:70px;height:4px;background:#f5b042;margin:15px auto 0;border-radius:4px}
+/* Cards */
+.cards{display:flex;flex-wrap:wrap;gap:30px;justify-content:center}
+.card{background:#fff;border-radius:24px;padding:30px 25px;width:300px;text-align:center;box-shadow:0 15px 30px rgba(0,0,0,0.05);transition:0.25s ease;border:1px solid #eef2f5}
+.card:hover{transform:translateY(-8px);box-shadow:0 25px 40px rgba(0,0,0,0.1)}
+.card i{font-size:48px;color:#f5b042;margin-bottom:20px}
+.card h3{margin:15px 0;color:#0b2b26;font-size:1.5rem}
+/* Vehicle grid */
+.vehicle-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:25px;margin-top:20px}
+.vehicle-card{background:#fff;border-radius:20px;padding:20px 12px;text-align:center;transition:0.2s;box-shadow:0 8px 20px rgba(0,0,0,0.05);border:1px solid #eef2f5}
+.vehicle-card:hover{transform:scale(1.02);box-shadow:0 12px 25px rgba(0,0,0,0.1)}
+.vehicle-card i{font-size:48px;color:#1a4a3f;margin-bottom:15px}
+.vehicle-card h4{font-size:1.2rem;margin-bottom:8px;color:#0b2b26}
+.vehicle-card .price{font-weight:bold;color:#f5b042;font-size:1.2rem}
+/* Price table */
+.price-table{width:100%;border-collapse:collapse;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,0.05)}
+.price-table th,.price-table td{padding:16px 20px;text-align:left;border-bottom:1px solid #e2e8f0}
+.price-table th{background:#0b2b26;color:#fff;font-weight:600}
+.price-table tr:last-child td{border-bottom:none}
+/* Calculator */
+.calculator{background:#eef2f5;border-radius:32px;padding:35px;margin-top:50px}
+.calculator h3{font-size:28px;margin-bottom:20px;color:#0b2b26}
+.form-group{margin-bottom:20px}
+.form-group label{display:block;font-weight:600;margin-bottom:8px}
+.form-group input,.form-group select{width:100%;padding:14px;border-radius:60px;border:1px solid #ccc;font-size:1rem}
+.calc-result{margin-top:25px;font-size:1.5rem;font-weight:bold;background:#fff;padding:15px;border-radius:60px;text-align:center}
+/* Reviews page */
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:30px}
+.review-card{background:#fff;border-radius:28px;padding:25px;box-shadow:0 10px 20px rgba(0,0,0,0.05);transition:0.2s}
+.review-card:hover{transform:translateY(-5px)}
+.review-header{display:flex;align-items:center;gap:15px;margin-bottom:15px}
+.review-avatar i{font-size:48px;color:#f5b042}
+.review-name{font-weight:bold;font-size:1.2rem}
+.review-date{font-size:0.8rem;color:#777}
+.review-stars{color:#f5b042;margin:10px 0}
+.review-text{line-height:1.4}
+/* Promotions page */
+.promos-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:30px}
+.promo-card{background:linear-gradient(145deg,#fff,#f9f9f9);border-radius:28px;padding:30px 20px;text-align:center;border:1px solid #ffd966}
+.promo-card i{font-size:52px;color:#f5b042;margin-bottom:20px}
+.promo-card h3{color:#0b2b26;margin-bottom:10px}
+.promo-card .promo-desc{color:#2c5a4e;margin-bottom:15px}
+.promo-badge{background:#ff6b00;color:#fff;padding:5px 12px;border-radius:60px;display:inline-block;font-weight:bold}
+/* Contacts page */
+.contacts-page{padding:70px 0;flex:1}
+.contacts-grid{display:flex;flex-wrap:wrap;gap:40px;justify-content:center}
+.contact-card{background:#fff;border-radius:28px;padding:35px;width:350px;text-align:center;box-shadow:0 15px 30px rgba(0,0,0,0.05);transition:0.2s}
+.contact-card i{font-size:48px;color:#f5b042;margin-bottom:20px}
+.contact-card h3{font-size:1.6rem;margin-bottom:15px;color:#0b2b26}
+/* Floating call button */
+.floating-call{position:fixed;bottom:25px;right:25px;background:#f5b042;width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 15px rgba(0,0,0,0.3);z-index:999;transition:0.2s}
+.floating-call a{color:#0b2b26;font-size:28px;text-decoration:none}
+.floating-call:hover{transform:scale(1.1);background:#ffc107}
+/* Animation reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:all 0.7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+/* Footer */
+footer{background:#0b1c19;color:#a0c0b8;text-align:center;padding:30px;font-size:14px;margin-top:auto}
+footer a{color:#f5b042;text-decoration:none}
+/* Responsive */
+@media (max-width:950px){
+    .header-flex{flex-direction:column;text-align:center}
+    .logo-area{align-items:center}
+    nav ul{gap:20px;flex-wrap:wrap;justify-content:center}
+    .hero h1{font-size:32px}
+    .section-title{font-size:28px}
+}
+@media (max-width:600px){
+    .call-btn span{display:none}
+    .call-btn i{margin:0}
+    .call-btn{padding:8px 12px}
+    .floating-call{width:50px;height:50px}
+    .floating-call a{font-size:24px}
+}
